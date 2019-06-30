@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>圣杯布局演示(利用 absolute)</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header,
+    .footer {
+      width: 100%;
+      height: 64px;
+      line-height: 64px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      background: lightblue;
+    }
+
+    .wrapper {
+      /* padding 用来空出左右定宽  */
+      padding: 0 200px;
+      position: relative;
+    }
+
+    .center {
+      /* width 自适应 */
+      width: 100%;
+      height: 500px;
+      background: lightcoral;
+      text-align: center;
+    }
+
+    .left,
+    .right {
+      width: 200px;
+      height: 500px;
+      background: lightgreen;
+      text-align: center;
+      position: absolute;
+      top: 0;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">Header Bar</div>
+  <div class="wrapper">
+    <!-- 为了最先渲染 center 部分内容，因此要把 center 部分放在最前面 -->
+    <div class="center">Center Content</div>
+    <div class="left">Left Content</div>
+    <div class="right">Right Content</div>
+  </div>
+  <div class="footer">Footer Bar</div>
+</body>
+
+</html>
