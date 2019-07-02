@@ -21,7 +21,35 @@
 
 ### CSS3 有哪些新增的特性？
 
-CSS3 新增的特性主要在阴影、动画上，还有增加伪类。
+CSS3 新增的特性主要在阴影、动画、选择器、布局、效果。
 
-参考文章：
+比较常用的有下面这些：
+
+- 阴影类:
+
+  - text-shadow
+  - box-shadow
+
+- 动画类:
+
+  - transition
+  - animation
+
+- 选择器:
+
+  - :not
+  - :first-child
+  - :last-child
+
+- 布局:
+
+  - flex
+  - grid
+
+- 效果:
+
+  - border-radius
+  - 文字省略
+
+更详细的部分可以参考这篇文章：
 [个人总结（css3 新特性）](https://segmentfault.com/a/1190000010780991)
