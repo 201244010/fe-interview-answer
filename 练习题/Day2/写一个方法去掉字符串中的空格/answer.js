@@ -26,7 +26,7 @@ const trimString = ({str = "", position = "both"}) => {
     //   return result;
     // },
     // 一行正则
-    // middle: () => str.replace(/(?!^)\s+(?!$)/g,''),
+    // middle: () => str.replace(/\b\s*\b/g,''),
     // 普通方法
     middle: () => {
       const leftSpace = str.match(/^\s+/)[0];
