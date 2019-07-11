@@ -41,6 +41,7 @@ CSS 选择器可以用来控制 HTML 中的 HTML 元素。目前常用的是 `cl
 
   伪元素选择器
 
-  - ::before/::after : 为某个元素
+  - ::before/::after : 为某个元素添加修饰，一般在元素前添加装饰。
 
 更完整的伪类和伪元素可以参考 [MDN 相关内容](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements) 和 [总结伪类和伪元素](http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/)
+
