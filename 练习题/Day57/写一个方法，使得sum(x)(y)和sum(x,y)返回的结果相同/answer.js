@@ -7,16 +7,18 @@ const sum = (x, y) => x + y;
 const sum3 = (x, y, z) => x + y + z;
 const pow = (x, y) => Math.pow(x, y);
 
-const curry = (fn) => {
+const curry = (fn, args) => {
   const argLen = fn.length;
-  console.log("fn arg len: ", argLen);
-  let argList = [];
-
-  return function curryFn(...input) {
-    argList = [...argList, ...input];
-    console.log("curryFn input: ", input);
-    console.log("curryFn arg: ", argList);
-    return argList.length >= argLen ? fn(...argList) : curryFn;
+  const tempArgList = args || [];
+  console.log("temp arg list: ", tempArgList);
+  return (...input) => {
+    const _args = tempArgList.concat(input);
+    console.log("input arg list: ", _args);
+    if (_args.length < argLen) {
+      return curry(fn, _args);
+    } else {
+      return fn(..._args);
+    }
   };
 };
 
