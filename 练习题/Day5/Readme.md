@@ -9,7 +9,7 @@
 
 - `_blank`
 
-	打开新的窗口或者新的标签页。在使用这个属性时，最好添加 `rel="noopener norefferrer"` 属性，防止打开的新窗口对原窗口进行篡改。防止 `window.opener` API 的恶意行为。
+	打开新的窗口或者新的标签页。在使用这个属性时，最好添加 `rel="noopener norefferrer"` 属性，防止打开的新窗口对原窗口进行篡改。防止 `window.opener` API 的恶意行为。因为在新开的标签页里可以通过 `window.opener.location` 来获取原窗口的信息。
 
 - `_parent`
 
