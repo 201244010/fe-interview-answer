@@ -6,6 +6,14 @@ HTML5 的离线存储
 [HTML5 存储方式](https://segmentfault.com/a/1190000011516871)
 [HTML5 离线存储原理](https://segmentfault.com/a/1190000006984353)
 
+离线存储是在 HTML 5 中创建 `cache manifest` 文件来实现 Web 应用的离线版本的。
+
+离线存储有这么几个好处：**没有网络时可以浏览**、**加快资源的加载速度**、**减少服务器负载**
+
+离线存储的相关配置在 `.appcache` 文件中。
+通过配置 `CACHE MANIFEST`, `NETWORK`, `FALLBACK` 来控制需要被缓存的文件。
+JavaScript 也暴露了 `applicationCache` API 让我们手动进行缓存的刷新。
+
 ### CSS 选择器有哪些？哪些属性可以继承？
 
 CSS 选择器可以用来控制 HTML 中的 HTML 元素。目前常用的是 `class` 选择器。配合 `saas`、`less` 结合嵌套继承写法会比较方便。
@@ -44,4 +52,3 @@ CSS 选择器可以用来控制 HTML 中的 HTML 元素。目前常用的是 `cl
   - ::before/::after : 为某个元素添加修饰，一般在元素前添加装饰。
 
 更完整的伪类和伪元素可以参考 [MDN 相关内容](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements) 和 [总结伪类和伪元素](http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/)
-
