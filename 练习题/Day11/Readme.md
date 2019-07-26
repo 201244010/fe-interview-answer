@@ -17,4 +17,18 @@
 
 ### 简要描述下 JS 有哪些内置的对象
 
+JS 的内置对象也称为“全局作用域里的对象”。与“全局对象”不同，全局对象是通过 `this` 访问（在浏览器里也就是 `window` 对象）。
+
+标准的内置对象可以理解为可以直接调用的对象。常用的有下面这些:
+
+- undefined
+- NaN
+- null
+- eval()
+- parseInt() / parseFloat()
+- encodeURI() / encodeURIComponent()
+- decodeURI() / decodeURIComponent()
+- Number / Math / Date / RegExp / Array / String / Map / WeekMap / Set / WeekSet / Symbol / Object / Function / Error (都是可以 `new` 出来的对象)
+- JSON
+
 完整的对象要参考 MDN：[JavaScript 标准内置对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
