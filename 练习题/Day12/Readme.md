@@ -12,6 +12,8 @@
 - Presto: Opera 使用的内核
 - Webkit: 前端使用最多的 Chrome 和 Safari 使用的内核
 
+参考文章：[常见的浏览器内核有哪些？](https://blog.csdn.net/beiniao520/article/details/80116780)
+
 ### 说说你对 css 盒子模型的理解
 
 一个元素的大小由，`border`、`margin`、`padding` 和 `width / hegiht` 决定。
