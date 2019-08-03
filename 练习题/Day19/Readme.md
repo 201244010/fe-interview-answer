@@ -4,6 +4,30 @@
 
 ### css 的属性 content 有什么作用呢？有哪些场景可以用到？
 
+CSS 的 `content` 一般用在 `::before/after` 这类的伪元素中。并且如果 `::before` 和 `::after` 元素如果不设置 `content` 属性的话，也是没有效果的。
+
+最常用的就是为文本添加头部内容和尾部内容，比如：
+
+```css
+h2::before {
+  // 这样一来所有的 h2 前面都会有 233
+  content: "233";
+}
+```
+
+除此之外，`content` 可以通过 `attr` 方法引用对应的属性，比如：
+
+```css
+a::after {
+  // 这样就能在 a 标签的后面跟上连接的内容了
+  content: attr(href);
+}
+```
+
+参考文章：
+[CSS content 内容生成技术以及应用](https://www.zhangxinxu.com/wordpress/2010/04/css-content%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90%E6%8A%80%E6%9C%AF%E4%BB%A5%E5%8F%8A%E5%BA%94%E7%94%A8/)
+[CSS 伪元素 content 属性的诸多取值](http://jimyuan.github.io/blog/2018/01/05/content-property-of-pseudo-element.html)
+
 ### "attribute"和"property"有什么不同？
 
 在操作 DOM 时，我们经常会操作 `attribute` 和 `property`。不过从两者的所属关系上来说： `property` 属于 DOM Object，而 `atrribute` 属于 HTML。
