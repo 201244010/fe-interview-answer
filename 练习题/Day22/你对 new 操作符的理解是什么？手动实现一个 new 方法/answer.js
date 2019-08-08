@@ -24,6 +24,7 @@ kizunaai.sayHello();
 
 function customNew(Fun, ...args) {
   const temp = {};
+  // 这里已经是一个实例了，只有 __proto__ 属性
   temp.__proto__ = Fun.prototype;
   Fun.apply(temp, [...args]);
   return temp;
