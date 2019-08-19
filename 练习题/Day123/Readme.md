@@ -1,5 +1,11 @@
 ## Day 123 解答
 
+### 使用canvas画出一个矩形
+
+Canvas 中内置的图形只有矩形，其余图形都需要通过路径来进行绘制。可以使用 `canvas` 的 `fillRect` 方法来绘制矩形。
+
+参考文档：[MDN Canvas 教程](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API)
+
 ### 什么是zoom？它有什么作用？
 
 `zoom` 最初是 IE 的私有属性，现在除了 Firefox 之外的浏览器基本都支持 `zoom`。不过，`zoom` 依旧不是正式的属性。与之对应的 `transform` 的 `scale` 属性是正式的 CSS 属性。
