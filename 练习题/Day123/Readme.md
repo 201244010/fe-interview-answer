@@ -13,3 +13,9 @@
 参考文章：[小tips: zoom和transform:scale的区别](https://www.zhangxinxu.com/wordpress/2015/11/zoom-transform-scale-diff/)
 
 ### 分析('b' + 'a' + +'a' + 'a').toLowerCase()返回的结果
+
+- `'b'+'a'` 为字符串拼接 => `ba`
+- `+ +'a'` 第一个 `+` 为字符串拼接的 `+`, `+'a'` 是把 `'a'` 转为数字 => 由于 `'a'` 无法转为数字，因此为 `NaN`
+- `+'a'` 为字符串拼接
+
+因此结果为 `'baNaNa'.toLowerCase()` => `banana`
