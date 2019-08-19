@@ -1,6 +1,6 @@
 ## Day 123 解答
 
-## 什么是zoom？它有什么作用？
+### 什么是zoom？它有什么作用？
 
 `zoom` 最初是 IE 的私有属性，现在除了 Firefox 之外的浏览器基本都支持 `zoom`。不过，`zoom` 依旧不是正式的属性。与之对应的 `transform` 的 `scale` 属性是正式的 CSS 属性。
 
@@ -11,3 +11,5 @@
 示例：https://codepen.io/Konata9/pen/jONrgVg
 
 参考文章：[小tips: zoom和transform:scale的区别](https://www.zhangxinxu.com/wordpress/2015/11/zoom-transform-scale-diff/)
+
+### 分析('b' + 'a' + +'a' + 'a').toLowerCase()返回的结果
